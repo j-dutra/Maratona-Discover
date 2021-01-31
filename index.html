@@ -44,7 +44,7 @@
             <section id="transaction">
                 <h2 class="sr-only">Transações</h2>
 
-                <a href="#" class="button new">+ Nova Transação</a>
+                <a href="#" onclick="Modal.open()" class="button new">+ Nova Transação</a>
 
                 <table id="data-table">
                     <thead>
@@ -89,7 +89,7 @@
             </section>
         </main>
 
-        <div class="modal-overlay active">
+        <div class="modal-overlay ">
             <div class="modal">
                 <div class="form">
                     <h2>Nova Transação</h2>
@@ -129,7 +129,17 @@
         </footer>
 
         <script src="./scipt.js">
-            
+            const Modal = {
+                open(){
+                    // Abrir Modal
+                    // Adicionar a class active ao modal
+                    document.alert("abrir o modal")
+                },
+                close(){
+                    // Fechar o modal
+                    // remover a classe active do modal
+                }
+            }
         
         </script>
     </body>
