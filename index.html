@@ -44,7 +44,9 @@
             <section id="transaction">
                 <h2 class="sr-only">Transações</h2>
 
-                <a href="#" onclick="Modal.open()" class="button new">+ Nova Transação</a>
+                <a href="#" 
+                onclick="Modal.open()"
+                 class="button new">+ Nova Transação</a>
 
                 <table id="data-table">
                     <thead>
@@ -113,7 +115,9 @@
                         </div>
 
                         <div class="input-group actions">
-                            <a href="#" class="button cancel">Cancelar</a>
+                            <a href="#" 
+                            onclick="Modal.close()"
+                            class="button cancel">Cancelar</a>
                             <button>Salvar</button>
                         </div>
 
@@ -128,16 +132,19 @@
             <p>dev.finance$</p>
         </footer>
 
-        <script src="./scipt.js">
+        <script>
             const Modal = {
                 open(){
                     // Abrir Modal
                     // Adicionar a class active ao modal
-                    document.alert("abrir o modal")
+                    document.querySelector(".modal-overlay")
+                    .classList.add('active')
                 },
                 close(){
                     // Fechar o modal
                     // remover a classe active do modal
+                    document.querySelector(".modal-overlay")
+                    .classList.remove('active')
                 }
             }
         
