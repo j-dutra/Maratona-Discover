@@ -60,6 +60,7 @@ const Transaction = {
 const DOM = {
     addTransaction(transaction, index){
         const tr = document.createElement("tr")
+        tr.innerHTML = DOM.innerHTMLTransaction()
     },
 
 
@@ -72,7 +73,7 @@ const DOM = {
         <td>
             <img src="./assets/minus.svg" alt="Remover Transação">
         </td>
-        
         `
+        return html
     }
 }
