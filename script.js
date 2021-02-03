@@ -1,20 +1,16 @@
+
 const Modal = { // mudar função toggle
     open(){
         // Abrir Modal
         // Adicionar a class active ao modal
 
-        document.
-            querySelector(".modal-overlay")
-            .classList
-            .add('active')
+        document.querySelector(".modal-overlay").classList.add('active')
     },
     close(){
         // Fechar o modal
         // Remover a classe active do modal
 
-        document.querySelector(".modal-overlay")
-        .classList
-        .remove('active')
+        document.querySelector(".modal-overlay").classList.remove('active')
     }
 }
 
