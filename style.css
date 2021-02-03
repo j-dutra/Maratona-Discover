@@ -172,7 +172,6 @@ table tbody tr td:last-child {
 table thead th {
     background: #fff;
     font-weight: normal;
-    color: #969cb3;
     padding: 1rem 2rem;
     text-align: left;
 }
@@ -188,7 +187,6 @@ table tbody tr:hover {
 table tbody td {
     background-color: #fff;
     padding: 1rem 2rem;
-    font-weight: normal;
 }
 
 td.description {
@@ -218,6 +216,8 @@ td.expanse {
 
     opacity: 0;
     visibility: hidden;
+
+    z-index: 999;
 }
 
 .modal-overlay.active{
@@ -229,8 +229,8 @@ td.expanse {
 .modal{
     background: #f0f2f5;
     padding: 2.4rem;
-    width: 90%;
-    max-width: 500px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Form ======================= */
@@ -253,7 +253,7 @@ input {
     margin-top: 0.8rem;
 }
 
-.input-group small {
+.input-group .help {
     opacity: 0.4;
 }
 
